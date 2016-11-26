@@ -11753,6 +11753,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Plot-each-distribution-of-the-Distributions.jl-package.">Plot each distribution of the <a href="http://distributionsjl.readthedocs.io">Distributions.jl package</a>.<a class="anchor-link" href="#Plot-each-distribution-of-the-Distributions.jl-package.">&#182;</a></h1><h4 id="TODO:">TODO:<a class="anchor-link" href="#TODO:">&#182;</a></h4><ul>
 <li>introspect args and do a plot per multiple values (probably just 0, 0.5 and 1) per arg</li>
+<li>find normalization factor of distribution (the multiplicative factor that ensures that the area under the density—the probability of something in the domain occurring— equals 1). This normalization factor is outside the kernel of the distribution.</li>
 <li>generate an HTML file cleaned from Jupyter clutter</li>
 <li>import markdown from README.md instead of duplicate header</li>
 </ul>
@@ -12409,7 +12410,7 @@ Could not create a default Distributions.MvNormalCanon{Float64,PDMats.ScalMat{Fl
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># export this notebook as HTML to index.html</span>
 <span class="n">cmd</span> <span class="o">=</span> <span class="sb">`jupyter nbconvert --to html DistributionsPlot.jl.ipynb --stdout`</span>
-<span class="n">pipeline</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">)</span>
+<span class="n">run</span><span class="p">(</span><span class="n">pipeline</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">))</span>
 </pre></div>
 
 </div>
