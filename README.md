@@ -3,4 +3,4 @@ Plot of each distribution of the [Distributions.jl package](https://github.com/J
 
 The plots are available at the associated GitHub Pages website: https://cmey.github.io/DistributionsPlot.jl
 
-Details of the distributions are available in the [Distributions.jl documentation](http://distributionsjl.readthedocs.io).
+Details of the distributions are available in the [Distributions.jl documentation](https://juliastats.github.io/Distributions.jl/latest/).
