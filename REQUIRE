@@ -2,5 +2,6 @@ julia 0.6
 
 Distributions
 GR
+IJulia
 Plots
 StatPlots
